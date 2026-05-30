@@ -496,6 +496,14 @@ body {
     color: #b4b4c4;
 }
 
+.tryin-shift {
+   width: 100% !important;
+   height: 80% !important;
+   object-fit: cover !important;
+
+   object-position: 30% center !important ;
+}
+
 .code-kw { color: var(--teal); }
 .code-fn { color: var(--accent-light); }
 .code-str { color: #34d399; }
