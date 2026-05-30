@@ -47,7 +47,7 @@
                 <a href="#contact" class="btn-ghost">Get in touch</a>
             </div>
             <div class="hero-photo-wrap">
-                <!-- TIP: Use remove.bg to strip the white background -->
+                
                 <img src="1774556943711.png" alt="Aakarsh Jha" class="hero-photo">
             </div>
         </div>
@@ -71,13 +71,15 @@
                     <span class="project-year">2025</span>
                     <span class="project-type">Security · AI</span>
                 </div>
-                <h3 class="project-featured-title">LLM-Based DevSecOps</h3>
+                <h3 class="project-featured-title">LLM-Based DevSecOps Platform</h3>
                 <p class="project-featured-desc">
-                    Integrated LLMs into GitHub CI/CD pipelines for real-time vulnerability scanning. 
-                    94% detection accuracy on SQL injection and XSS — with a focus on keeping false positives low.
+                    Security analysis platform that integrates with GitHub CI/CD pipelines using LLMs for 
+                    real-time code vulnerability detection. Scans code diffs through LLM-based analysis, 
+                    for SQLi and XSS detection. Features automated PR scanning 
+                    and real-time security reports.
                 </p>
                 <div class="project-tags">
-                    <span>Python</span><span>LLM</span><span>GitHub Actions</span><span>CI/CD</span>
+                    <span>Python</span><span>GitHub Actions</span><span>LLM APIs</span><span>CI/CD</span>
                 </div>
             </div>
             <div class="project-featured-visual">
@@ -85,11 +87,12 @@
                     <div class="code-bar">
                         <span></span><span></span><span></span>
                     </div>
-                    <pre><code><span class="code-kw">def</span> <span class="code-fn">analyze_commit</span>(diff):
-    threats = llm.scan(diff)
-    <span class="code-kw">if</span> threats.confidence > <span class="code-num">0.94</span>:
-        pipeline.block(threats)
-        <span class="code-kw">return</span> <span class="code-str">"🛡️ Blocked"</span></code></pre>
+                    <pre><code><span class="code-kw">def</span> <span class="code-fn">scan_pr</span>(diff):
+    vulns = llm.analyze(diff)
+    <span class="code-kw">for</span> v <span class="code-kw">in</span> vulns:
+        <span class="code-kw">if</span> v.type <span class="code-kw">in</span> [<span class="code-str">"SQLi"</span>, <span class="code-str">"XSS"</span>]:
+            report.flag(v, <span class="code-num">0.94</span>)
+    <span class="code-kw">return</span> report</code></pre>
                 </div>
             </div>
         </a>
@@ -103,32 +106,36 @@
                     <span class="project-type">Full-Stack</span>
                 </div>
                 <h3>Manipal Airlines</h3>
-                <p>Airline reservation system with interactive seat maps, geospatial route visualization 
-                    on real maps, and 7-day fare predictions using ML.</p>
+                <p>Full-stack airline reservation system built with Django. Interactive real-time seat selection, 
+                    geospatial route visualization using Leaflet.js, and a 7-day fare prediction model 
+                    with scikit-learn. Complete booking workflows with passenger management and flight search.</p>
                 <div class="project-tags">
-                    <span>Django</span><span>PostgreSQL</span><span>Leaflet.js</span><span>scikit-learn</span>
+                    <span>Django</span><span>PostgreSQL</span><span>Leaflet.js</span><span>scikit-learn</span><span>JavaScript</span>
                 </div>
                 <div class="project-arrow">↗</div>
             </a>
 
-         
+            
+
             <a href="https://github.com/Aakarsh-Jha/PCAP-Poject" target="_blank" class="project-card">
                 <div class="project-card-bg" style="--card-hue: 280;"></div>
                 <div class="project-meta">
                     <span class="project-year">2024</span>
-                    <span class="project-type">Security</span>
+                    <span class="project-type">Security · Networking</span>
                 </div>
                 <h3>PCAP Analyzer</h3>
-                <p>Network traffic analysis tool that performs deep packet inspection 
-                    on PCAP files, detects threats, and generates visual reports.</p>
+                <p>Network traffic analysis tool for deep packet inspection on PCAP files. Analyzes 
+                    TCP, UDP, HTTP, and DNS protocols, detects security threats and anomalies, and 
+                    generates visual reports with traffic pattern analysis.</p>
                 <div class="project-tags">
-                    <span>Python</span><span>Scapy</span><span>Matplotlib</span>
+                    <span>Python</span><span>Scapy</span><span>dpkt</span><span>Matplotlib</span>
                 </div>
                 <div class="project-arrow">↗</div>
             </a>
 
             
         </div>
+
 
         <!-- CTF / Security Research banner -->
         <div class="ctf-banner">
