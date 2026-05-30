@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aakarsh Jha — CS Student & Developer</title>
+    <meta name="description" content="Portfolio of Aakarsh Jha — Computer Science student at MIT Manipal, building things at the intersection of security and software.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2310b981' rx='14' width='100' height='100'/><text x='50' y='67' font-family='system-ui' font-size='46' font-weight='700' fill='white' text-anchor='middle'>AJ</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Floating nav -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">AJ</a>
+            <div class="nav-links">
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                <a href="Aakarsh 230905248.pdf" target="_blank" class="nav-resume">Resume ↗</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" id="hero">
+        <div class="hero-gradient"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Open to opportunities
+            </div>
+            <h1 class="hero-name">
+                <span class="hero-line">Aakarsh</span>
+                <span class="hero-line hero-line-accent">Jha</span>
+            </h1>
+            <p class="hero-desc">Computer Science student at MIT Manipal building things.</p>
+            <div class="hero-ctas">
+                <a href="#work" class="btn-main">See my work</a>
+                <a href="#contact" class="btn-ghost">Get in touch</a>
+            </div>
+            <div class="hero-photo-wrap">
+                <!-- TIP: Use remove.bg to strip the white background -->
+                <img src="1774556943711.png" alt="Aakarsh Jha" class="hero-photo">
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ═══ PROJECTS ═══ -->
+    <section class="section" id="work">
+        <div class="section-header">
+            <span class="section-label">Selected Work</span>
+            <h2 class="section-title">Projects</h2>
+        </div>
+
+        <!-- Featured project — full width -->
+        <a href="https://github.com/Aakarsh-Jha/LLM-Based-DevSecOps" target="_blank" class="project-featured">
+            <div class="project-featured-content">
+                <div class="project-meta">
+                    <span class="project-year">2025</span>
+                    <span class="project-type">Security · AI</span>
+                </div>
+                <h3 class="project-featured-title">LLM-Based DevSecOps</h3>
+                <p class="project-featured-desc">
+                    Integrated LLMs into GitHub CI/CD pipelines for real-time vulnerability scanning. 
+                    94% detection accuracy on SQL injection and XSS — with a focus on keeping false positives low.
+                </p>
+                <div class="project-tags">
+                    <span>Python</span><span>LLM</span><span>GitHub Actions</span><span>CI/CD</span>
+                </div>
+            </div>
+            <div class="project-featured-visual">
+                <div class="project-visual-code">
+                    <div class="code-bar">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <pre><code><span class="code-kw">def</span> <span class="code-fn">analyze_commit</span>(diff):
+    threats = llm.scan(diff)
+    <span class="code-kw">if</span> threats.confidence > <span class="code-num">0.94</span>:
+        pipeline.block(threats)
+        <span class="code-kw">return</span> <span class="code-str">"🛡️ Blocked"</span></code></pre>
+                </div>
+            </div>
+        </a>
+
+        <!-- Project grid -->
+        <div class="project-grid">
+            <a href="https://github.com/Aakarsh-Jha/Airline-Reservation-System" target="_blank" class="project-card project-card-tall">
+                <div class="project-card-bg" style="--card-hue: 220;"></div>
+                <div class="project-meta">
+                    <span class="project-year">2025</span>
+                    <span class="project-type">Full-Stack</span>
+                </div>
+                <h3>Manipal Airlines</h3>
+                <p>Airline reservation system with interactive seat maps, geospatial route visualization 
+                    on real maps, and 7-day fare predictions using ML.</p>
+                <div class="project-tags">
+                    <span>Django</span><span>PostgreSQL</span><span>Leaflet.js</span><span>scikit-learn</span>
+                </div>
+                <div class="project-arrow">↗</div>
+            </a>
+
+         
+            <a href="https://github.com/Aakarsh-Jha/PCAP-Poject" target="_blank" class="project-card">
+                <div class="project-card-bg" style="--card-hue: 280;"></div>
+                <div class="project-meta">
+                    <span class="project-year">2024</span>
+                    <span class="project-type">Security</span>
+                </div>
+                <h3>PCAP Analyzer</h3>
+                <p>Network traffic analysis tool that performs deep packet inspection 
+                    on PCAP files, detects threats, and generates visual reports.</p>
+                <div class="project-tags">
+                    <span>Python</span><span>Scapy</span><span>Matplotlib</span>
+                </div>
+                <div class="project-arrow">↗</div>
+            </a>
+
+            
+        </div>
+
+        <!-- CTF / Security Research banner -->
+        <div class="ctf-banner">
+            <div class="ctf-icon"><i class="fa-solid fa-flag"></i></div>
+            <div class="ctf-text">
+                <h3>CTF & Security Research</h3>
+                <p>Active in picoCTF and TryHackMe Advent of Cyber. Writeups covering web exploitation, 
+                    OSINT, forensics, and more.</p>
+            </div>
+            <div class="ctf-links">
+                <a href="https://github.com/Aakarsh-Jha/picoCTF-Writeups" target="_blank">picoCTF ↗</a>
+                <a href="https://github.com/Aakarsh-Jha/TryHackMe-Advent-Of-Cyber" target="_blank">TryHackMe ↗</a>
+                <a href="https://github.com/Aakarsh-Jha/Wargames-Bandit-Writeup-By-UselessAaka" target="_blank">OverTheWire ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section class="section" id="about">
+        <div class="section-header">
+            <span class="section-label">Background</span>
+            <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p class="about-lead">
+                    I'm a 3rd year Computer Science student at Manipal who got into programming 
+                    through problem-solving and never really stopped.
+                </p>
+                <p>
+                    These days I'm most interested in backend systems and security — my last project 
+                    involved hooking LLMs into CI/CD pipelines to catch vulnerabilities before they ship.
+                    I also do CTFs on the side to stay sharp.
+                </p>
+                <p>
+                    Outside of code, I'm on the management teams at MIST (cybersecurity), 
+                    TCCAM (consulting), and ESOM (economics & finance). 
+                    Contributed to Magnify — TCCAM's event on AI/ML and digital transformation.
+                </p>
+            </div>
+            <div class="about-details">
+                <div class="detail-card">
+                    <span class="detail-label">Education</span>
+                    <span class="detail-value">B.Tech CS · MIT Manipal</span>
+                    <span class="detail-sub">Class of 2027</span>
+                </div>
+                <div class="detail-card">
+                    <span class="detail-label">Coursework</span>
+                    <span class="detail-value">DSA · OS · CN · DBMS · OOP · COA</span>
+                </div>
+                <div class="detail-card">
+                    <span class="detail-label">Clubs</span>
+                    <span class="detail-value">MIST · TCCAM · ESOM</span>
+                    <span class="detail-sub">Management Committee</span>
+                </div>
+                <div class="detail-card">
+                    <span class="detail-label">Location</span>
+                    <span class="detail-value">Noida, UP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SKILLS ═══ -->
+    <section class="section section-dark" id="skills">
+        <div class="section-header">
+            <span class="section-label">Toolkit</span>
+            <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skills-layout">
+            <div class="skill-group">
+                <h3 class="skill-group-title"><i class="fa-solid fa-terminal"></i> Languages</h3>
+                <div class="skill-pills">
+                    <span class="pill pill-primary">C/C++</span>
+                    <span class="pill pill-primary">Python</span>
+                    <span class="pill pill-primary">Java</span>
+                    <span class="pill">SQL</span>
+                    <span class="pill">JavaScript</span>
+                    <span class="pill">Embedded C</span>
+                    <span class="pill">Assembly</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3 class="skill-group-title"><i class="fa-solid fa-globe"></i> Web Development</h3>
+                <div class="skill-pills">
+                    <span class="pill pill-primary">Django</span>
+                    <span class="pill">React</span>
+                    <span class="pill">Next.js</span>
+                    <span class="pill">HTML/CSS</span>
+                    <span class="pill">Tailwind</span>
+                    <span class="pill">Bootstrap</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3 class="skill-group-title"><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Infra</h3>
+                <div class="skill-pills">
+                    <span class="pill pill-primary">Git/GitHub</span>
+                    <span class="pill">Supabase</span>
+                    <span class="pill">Vercel</span>
+                    <span class="pill">MySQL</span>
+                    <span class="pill">Linux</span>
+                    <span class="pill">VirtualBox</span>
+                    <span class="pill">Cisco Packet Tracer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section class="section" id="contact">
+        <div class="contact-block">
+            <span class="section-label">Let's connect</span>
+            <h2 class="contact-heading">Got something in mind?</h2>
+            <p class="contact-sub">I'm always open to interesting conversations, internship opportunities, or just a good tech discussion.</p>
+            <div class="contact-links">
+                <a href="mailto:aakarsh13jha@gmail.com" class="contact-link">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>aakarsh13jha@gmail.com</span>
+                </a>
+                <a href="tel:+917990115635" class="contact-link">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 79901 15635</span>
+                </a>
+                <a href="https://linkedin.com/in/aakarsh-jha" target="_blank" class="contact-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Aakarsh-Jha" target="_blank" class="contact-link">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-logo">AJ</span>
+            <div class="footer-socials">
+                <a href="https://github.com/Aakarsh-Jha" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/aakarsh-jha" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:aakarsh13jha@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <span class="footer-copy">&copy; 2026 Aakarsh Jha</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
