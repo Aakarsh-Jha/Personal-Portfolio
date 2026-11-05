@@ -24,7 +24,7 @@
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
-                <a href="Aakarsh 230905248.pdf" target="_blank" class="nav-resume">Resume ↗</a>
+                <a href="Aakarsh%20230905248%20updated.pdf" target="_blank" class="nav-resume">Resume ↗</a>
             </div>
         </div>
     </nav>
@@ -73,13 +73,13 @@
                 </div>
                 <h3 class="project-featured-title">LLM-Based DevSecOps Platform</h3>
                 <p class="project-featured-desc">
-                    Security analysis platform that integrates with GitHub CI/CD pipelines using LLMs for 
-                    real-time code vulnerability detection. Scans code diffs through LLM-based analysis, 
-                    for SQLi and XSS detection. Features automated PR scanning 
-                    and real-time security reports.
+                    Architected an LLM-based DevSecOps pipeline integrated with GitHub CI/CD for near real-time security analysis (&le; 30s per commit). Detects commit-diff vulnerabilities by filtering static analysis results through an LLM semantic reasoning layer to isolate SQLi and XSS flaws, with automated PR security reports and merge quality gates.
                 </p>
                 <div class="project-tags">
-                    <span>Python</span><span>GitHub Actions</span><span>LLM APIs</span><span>CI/CD</span>
+                    <span>Python</span><span>GitHub Actions</span><span>CI/CD</span><span>Static Analysis</span><span>DevSecOps</span>
+                </div>
+                <div style="margin-top: 1.25rem; display: flex; gap: 1rem;">
+                    <span style="color: var(--accent); font-size: 0.85rem; font-weight: 600; display: flex; align-items: center; gap: 0.4rem;"><i class="fa-brands fa-github"></i> View Repository ↗</span>
                 </div>
             </div>
             <div class="project-featured-visual">
@@ -97,7 +97,42 @@
             </div>
         </a>
 
-        <!-- Featured project 2: Manipal Airlines -->
+        <!-- Featured project 2 — NGINX Ingress Load Balancing on Azure AKS -->
+        <a href="https://github.com/Aakarsh-Jha/AKS_CloudLoadBalancing" target="_blank" class="project-featured">
+            <div class="project-featured-content">
+                <div class="project-meta">
+                    <span class="project-year">2026</span>
+                    <span class="project-type">Cloud · Kubernetes · Performance</span>
+                </div>
+                <h3 class="project-featured-title">NGINX Ingress Load Balancing on Azure AKS</h3>
+                <p class="project-featured-desc">
+                    Engineered a reproducible cloud testbed deploying containerized microservices on a 2-node Azure Kubernetes Service (AKS) cluster utilizing the NGINX Ingress Controller. Evaluated Round Robin, Least Connections (EWMA), and IP Hashing under asymmetric loads up to 200 concurrent users via Locust—discovering dynamic EWMA reduced tail-latency (P99) by up to 55% (110–120ms vs 170ms) and established 99.99%+ availability during pod termination failovers.
+                </p>
+                <div class="project-tags">
+                    <span>Kubernetes (AKS)</span><span>NGINX Ingress</span><span>Locust</span><span>Docker</span><span>Python</span>
+                </div>
+                <div style="margin-top: 1.25rem; display: flex; gap: 1rem;">
+                    <span style="color: var(--accent); font-size: 0.85rem; font-weight: 600; display: flex; align-items: center; gap: 0.4rem;"><i class="fa-brands fa-github"></i> View Repository ↗</span>
+                </div>
+            </div>
+            <div class="project-featured-visual">
+                <div class="project-visual-code">
+                    <div class="code-bar">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <pre><code><span class="code-kw">$</span> locust --host=https://aks-ingress
+<span class="code-fn">[AKS Testbed]</span> 2-Node Cluster (200 Users)
+<span class="code-kw">Ingress Alg:</span> Least Connections (EWMA)
+---------------------------------------
+<span class="code-str">Tail Latency (P99):</span> <span class="code-num">112ms</span> <span class="code-fn">(-55%)</span>
+<span class="code-str">CPU Fairness (CV):</span>  <span class="code-num">0.1%</span> vs IP Hash <span class="code-num">95.5%</span>
+<span class="code-str">High Availability:</span>  <span class="code-num">99.99%+</span> (0 req loss)
+<span class="code-kw">Pod Recovery:</span>       <span class="code-str">5.1s self-healing &#10003;</span></code></pre>
+                </div>
+            </div>
+        </a>
+
+        <!-- Featured project 3: Manipal Airlines -->
         <div class="project-featured">
             <div class="project-featured-content">
                 <div class="project-meta">
@@ -106,12 +141,10 @@
                 </div>
                 <h3 class="project-featured-title">Manipal Airlines</h3>
                 <p class="project-featured-desc">
-                    Full-stack airline reservation system built with Django. Interactive real-time seat selection, 
-                    geospatial route visualization using Leaflet.js, and a 7-day fare prediction model 
-                    with scikit-learn. Complete booking workflows with passenger management and flight search.
+                    Full-stack airline reservation system with flight search, real-time seat selection, and end-to-end booking lifecycle management. Engineered geospatial route visualization using Leaflet.js, a 7-day price trend analysis module with Chart.js, and an editorial UI powered by a 50+ token design system.
                 </p>
                 <div class="project-tags">
-                    <span>Django</span><span>SQLite</span><span>Leaflet.js</span><span>Javascript</span>
+                    <span>Django</span><span>Python</span><span>JavaScript</span><span>SQLite</span><span>Leaflet.js</span>
                 </div>
                 <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
                     <a href="https://manipal-airlines.onrender.com/" target="_blank" style="color: var(--accent); text-decoration: none; font-size: 0.85rem; font-weight: 600; display: flex; align-items: center; gap: 0.4rem;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
@@ -125,38 +158,33 @@
 
         <!-- Project grid -->
         <div class="project-grid">
+            <a href="https://github.com/Aakarsh-Jha/PCAP-Poject" target="_blank" class="project-card">
+                <div class="project-card-bg" style="--card-hue: 280;"></div>
+                <div class="project-meta">
+                    <span class="project-year">Course Project</span>
+                    <span class="project-type">Security · Networking</span>
+                </div>
+                <h3>Network Packet Analyzer</h3>
+                <p>Packet capture and network traffic analysis tool programmed in C using the PCAP library in Linux to perform deep packet inspection and network protocol analysis.</p>
+                <div class="project-tags">
+                    <span>C</span><span>libpcap</span><span>Linux</span><span>Networking</span>
+                </div>
+                <div class="project-arrow">↗</div>
+            </a>
+
             <a href="https://github.com/Aakarsh-Jha/JavaFX-project" target="_blank" class="project-card">
                 <div class="project-card-bg" style="--card-hue: 180;"></div>
                 <div class="project-meta">
-                    <span class="project-year">2024</span>
+                    <span class="project-year">Course Project</span>
                     <span class="project-type">Desktop App</span>
                 </div>
-                <h3>Smart Healthcare</h3>
-                <p>Desktop healthcare management application built with JavaFX. Features an interactive GUI for patient 
-                    record management, doctor scheduling, and administrative workflows.</p>
+                <h3>Smart Healthcare (SHMS)</h3>
+                <p>Healthcare management desktop system constructed with JavaFX to manage patients, doctors, and appointments utilizing a file-based storage architecture.</p>
                 <div class="project-tags">
                     <span>Java</span><span>JavaFX</span><span>FXML</span><span>OOP</span>
                 </div>
                 <div class="project-arrow">↗</div>
             </a>
-
-            <a href="https://github.com/Aakarsh-Jha/PCAP-Project" target="_blank" class="project-card">
-                <div class="project-card-bg" style="--card-hue: 280;"></div>
-                <div class="project-meta">
-                    <span class="project-year">2024</span>
-                    <span class="project-type">Security · Networking</span>
-                </div>
-                <h3>PCAP Analyzer</h3>
-                <p>Network traffic analysis tool for deep packet inspection on PCAP files. Analyzes 
-                    TCP, UDP, HTTP, and DNS protocols, detects security threats and anomalies, and 
-                    generates visual reports with traffic pattern analysis.</p>
-                <div class="project-tags">
-                    <span>Python</span><span>Scapy</span><span>dpkt</span><span>Matplotlib</span>
-                </div>
-                <div class="project-arrow">↗</div>
-            </a>
-
-            
         </div>
 
 
@@ -165,8 +193,7 @@
             <div class="ctf-icon"><i class="fa-solid fa-flag"></i></div>
             <div class="ctf-text">
                 <h3>CTF & Security Research</h3>
-                <p>30+ problems solved across picoCTF and TryHackMe Advent of Cyber. Writeups covering web exploitation, 
-                    OSINT, forensics, and more.</p>
+                <p>Practiced security through 30+ CTF writeups across TryHackMe, picoCTF, and OverTheWire, covering web exploitation, Linux commands, cryptography, and forensics.</p>
             </div>
             <div class="ctf-links">
                 <a href="https://github.com/Aakarsh-Jha/picoCTF-Writeups" target="_blank">picoCTF ↗</a>
@@ -189,12 +216,12 @@
                     through problem-solving.
                 </p>
                 <p>
-                    These days I'm most interested in full-stack development, data analysis, AI, and cybersecurity.
+                    These days I'm most interested in cloud systems, DevSecOps, full-stack development, and cybersecurity.
                 </p>
                 <p>
-                    Outside of code, I have been a part of the management teams at MIST (cybersecurity), 
+                    Outside of code, I have been a part of the management teams at Information Security Team (MIST), 
                     TCCAM (consulting), and ESOM (economics & finance). 
-                    Contributed to Magnify — TCCAM's event on AI/ML and digital transformation.
+                    Contributed to Magnify — TCCAM's consulting event applying AI/ML and digital transformation frameworks to real-world business problems.
                 </p>
             </div>
             <div class="about-details">
@@ -205,7 +232,12 @@
                 </div>
                 <div class="detail-card">
                     <span class="detail-label">Coursework</span>
-                    <span class="detail-value">DSA · OS · CN · DBMS · OOP · COA</span>
+                    <span class="detail-value">DSA · OOP · DBMS · OS · CN · SDLC · COA</span>
+                </div>
+                <div class="detail-card">
+                    <span class="detail-label">Certifications</span>
+                    <span class="detail-value">Google AI · Digital Marketing</span>
+                    <span class="detail-sub">Coursera</span>
                 </div>
                 <div class="detail-card">
                     <span class="detail-label">Clubs</span>
@@ -232,34 +264,38 @@
                 <div class="skill-pills">
                     <span class="pill pill-primary">C/C++</span>
                     <span class="pill pill-primary">Java</span>
-                    <span class="pill pill-primary">SQL</span>
-                    <span class="pill">Python</span>
+                    <span class="pill pill-primary">Python</span>
+                    <span class="pill pill-primary">SQL & PL/SQL</span>
                     <span class="pill">JavaScript</span>
-                    <span class="pill">Embedded C</span>
-                    <span class="pill">Assembly</span>
+                    <span class="pill">HTML / CSS</span>
+                    <span class="pill">ARM Assembly</span>
                 </div>
             </div>
             <div class="skill-group">
-                <h3 class="skill-group-title"><i class="fa-solid fa-globe"></i> Web Development</h3>
+                <h3 class="skill-group-title"><i class="fa-solid fa-globe"></i> Frameworks & Tech</h3>
                 <div class="skill-pills">
                     <span class="pill pill-primary">Django</span>
-                    <span class="pill pill-primary">HTML/CSS</span>
+                    <span class="pill pill-primary">Tailwind CSS</span>
                     <span class="pill pill-primary">Bootstrap</span>
-                    <span class="pill">React</span>
-                    <span class="pill">Tailwind</span>
-                    <span class="pill">Next.js</span>
+                    <span class="pill">JavaFX</span>
+                    <span class="pill">MPI</span>
+                    <span class="pill">REST APIs</span>
                 </div>
             </div>
             <div class="skill-group">
-                <h3 class="skill-group-title"><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Infra</h3>
+                <h3 class="skill-group-title"><i class="fa-solid fa-screwdriver-wrench"></i> Cloud, Tools & Infra</h3>
                 <div class="skill-pills">
-                    <span class="pill pill-primary">Git/GitHub</span>
+                    <span class="pill pill-primary">Kubernetes (AKS)</span>
+                    <span class="pill pill-primary">Docker</span>
+                    <span class="pill pill-primary">NGINX Ingress</span>
+                    <span class="pill pill-primary">Git & GitHub</span>
                     <span class="pill pill-primary">Linux</span>
-                    <span class="pill pill-primary">Vercel</span>
+                    <span class="pill">Locust</span>
+                    <span class="pill">CI/CD</span>
                     <span class="pill">MySQL</span>
                     <span class="pill">Supabase</span>
+                    <span class="pill">Vercel</span>
                     <span class="pill">VirtualBox</span>
-                    <span class="pill">Cisco Packet Tracer</span>
                 </div>
             </div>
         </div>
